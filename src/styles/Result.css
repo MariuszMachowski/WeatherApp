@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p.invalidCity{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    margin: 0 auto;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px #222;
+    text-align: center;
+}
+section.forecast{
+    position: relative;
+    height: 74vh;
+    /* background-color: indianred; */
+}
+
+header.mainInfo{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    margin: 10px 0 0 0 ;
+    /* background-color: mediumturquoise; */
+}
+
+
+.mainInfo h1{
+    box-sizing: border-box;
+    flex-basis: 100%;
+    padding-left: 25px;
+    padding-right: 15px;
+    align-self: flex-end;
+    font-weight: normal;
+    font-size: 36px;
+    /* background-color: limegreen; */
+}
+.mainInfo h1 .temp{
+    font-size: 44px;
+    margin-left: 5px;
+    /* font-weight: bold; */
+}
+.mainInfo p{
+    /* background-color: lightseagreen; */
+    flex-grow: 1;
+    margin: 0;
+    padding-left: 25px;
+    box-sizing: border-box;
+    font-style: italic;
+    font-size: 20px;
+}
+.mainInfo div.picture{
+    margin-top: -25px;
+    margin-right: 10px;
+    flex-basis: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mainInfo div.picture.top{
+    margin-top: -50px;
+    margin-right: 50px;
+}
+
+aside{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    top: 160px;
+    bottom: 5vw;
+    left: 5%;
+    width: 90%;
+    border-radius: 10px;
+}
+aside div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 49%;
+    height: 32%;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.6);
+    transition: .2s;
+    border-radius: 10px;
+}
+aside div p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+aside div p:nth-of-type(1){
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+aside div p:nth-of-type(2){
+    color: deepskyblue;
+}
+
+@media (orientation:portrait){
+    .mainInfo h1{
+        font-size: 28px;
+        margin-top: 10px;
+    }
+    .mainInfo h1 .temp{
+        font-size: 34px;
+    }
+    .mainInfo p{
+        font-size: 18px;
+        margin-top: -5px;
+    }
+    .mainInfo div.picture{
+        margin-top: -20px;
+    }
+    aside div p{
+        font-size: 15px;
+    }
+    aside div p:nth-of-type(1){
+        font-size: 24px;
+    }
+}
+@media (orientation:portrait) and (min-width:360px){
+    .mainInfo h1{
+        font-size: 30px;
+    }
+    .mainInfo h1 .temp{
+        font-size: 36px;
+    }
+    .mainInfo p{
+        font-size: 20px;
+    }
+
+    aside div p{
+        font-size: 18px;
+    }
+    aside div p:nth-of-type(1){
+        font-size: 28px;
+    }
+}
+@media (orientation: portrait) and (min-width:600px){
+
+    .mainInfo h1{
+        font-size: 42px;
+        padding-left: 35px;
+    }
+    .mainInfo h1 .temp{
+        font-size: 50px;
+    }
+    .mainInfo p{
+        margin-top: -10px;
+        height: 80px;
+        font-size: 26px;
+        padding-left: 35px;
+    }
+    .mainInfo div.picture{
+        margin-top: -40px;
+        margin-right: 40px;
+        height: 130px;
+        flex-basis: 130px;
+    }
+    aside div p{
+        font-size: 28px;
+    }
+    aside div p:nth-of-type(1){
+        font-size: 38px;
+    }
+}
+@media(orientation:landscape){
+    .mainInfo div.picture{
+        margin-top: -50px;
+        margin-right: 10px;
+    }
+    .mainInfo h1{
+        font-size: 29px;
+    }
+    .mainInfo h1 .temp{
+        font-size: 36px;
+    }
+    .mainInfo p{
+        height: 30px;
+        font-size: 18px;
+    }
+    header.mainInfo{
+        height: 100px;
+    }
+    
+aside{
+    top: 100px;
+    bottom: 1vw;
+    left: 4%;
+    width: 92%;
+}
+aside div{
+    flex-basis: 32%;
+    height: 48%;
+}
+aside div p{
+    font-size: 14px;
+}
+aside div p:nth-of-type(1){
+    font-size: 22px;
+}
+}
+@media(orientation:landscape) and (min-width:640px){
+    header.mainInfo{
+        height: 120px;
+        margin: 0;
+    }
+    aside div p{
+        font-size: 16px;
+    }
+    aside div p:nth-of-type(1){
+        font-size: 24px;
+    }
+}
+@media(orientation:landscape) and (min-width:1024px){
+    section.forecast{
+        height: 78vh;
+    }
+    header.mainInfo{
+        height: 150px;
+        margin: 0;
+    }
+
+
+    .mainInfo div.picture{
+        margin-top: -75px;
+        margin-right: 50px;
+        flex-basis: 150px;
+        height: 150px;
+    }
+    .mainInfo h1{
+        font-size: 40px;
+        padding-left: 60px;
+        padding-top: 25px;
+    }
+    .mainInfo h1 .temp{
+        font-size: 46px;
+    }
+    .mainInfo p{
+        margin-top: -10px;
+        font-size: 22px;
+        padding-left: 60px;
+    }
+
+    aside{
+        top: 150px;
+        bottom: 5vw;
+        left: 5%;
+        width: 90%;
+        /* justify-content: space-around; */
+        align-content: space-around;
+    }
+    aside div{
+        flex-basis: 30%;
+        height: 44%;
+    }
+    aside div:hover{
+        background-color: rgba(0,0,0,.8);
+        cursor: pointer;
+    }
+    aside div p{
+        font-size: 20px;
+    }
+    aside div p:nth-of-type(1){
+        font-size: 34px;
+    }
+}

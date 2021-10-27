@@ -1,0 +1,54 @@
+header{
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+    margin-top: 4vh;
+    color: white;
+}
+header p{
+    line-height: 8vh;
+    font-size: 22px;
+    margin-left: 15vw;
+}
+header div img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.move{
+    animation: logoMove 15s linear infinite;
+}
+
+@keyframes logoMove {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media (orientation: portrait) and (min-width:600px){
+    header p{
+        font-size: 34px;
+    }
+}
+@media(orientation:landscape){
+    header{
+        justify-content: flex-start;
+        height: 8vh;
+        margin-top: 4vh;
+    }
+    header p{
+        font-size: 18px;
+        margin-left: 5vw;
+    }
+}
+@media(orientation:landscape) and (min-width:1024px){
+    header p{
+        line-height: 8vh;
+        font-size: 22px;
+        margin-left: 5vw;
+    }
+}

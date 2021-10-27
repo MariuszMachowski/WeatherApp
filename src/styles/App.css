@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    position: relative;
+    height: 100vh;
+    background-image: url('../images/mountains.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right;
+    /* overflow-x: hidden; */
+}
+
+div.App{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1)
+}
+
+div.wrapper{
+    overflow:hidden;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 100vh;
+}

@@ -1,0 +1,98 @@
+form{
+    margin-top: 4vh;
+    height: 10vh;
+    position: relative;
+    /* background-color: tomato; */
+    /* z-index: 2; */
+}
+form input,form button{
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 80%;
+    height: 50px;
+    border-radius: 50px;
+    border:none;
+
+}
+form input{
+    font-family: 'Roboto Condensed', sans-serif;
+    outline: 0;
+    padding-left: 40px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: 2px solid gray;
+}
+::-webkit-input-placeholder {
+    color: darkgray;
+    }
+form button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #001d2d;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: .3s;
+}
+form button:hover{
+    background-color: #ce8993;
+}
+
+@media (orientation:landscape){
+    form{
+        margin-top: 0;
+        height: 12vh;
+    }
+
+    form input{
+        font-size: 16px;
+        right: 15%;
+        width: 50%;
+        height: 40px;
+    }
+    form button{
+        right: 15%;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+}
+@media(orientation:landscape) and (min-width:1024px){
+    form{
+        margin-top: 0;
+        height: 10vh;
+    }
+    form input{
+        font-size: 22px;
+        right: 20%;
+        width: 50%;
+        height: 60px;
+        top:10%;
+    }
+    form button{
+        right: 20%;
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        top:10%;
+    }
+}
+@media (orientation: portrait) and (min-width:600px){
+    form{
+        margin-top: 2vh;
+    }
+    form input{
+        right: 10%;
+        width: 80%;
+        height: 60px;
+        font-size: 26px;
+    }
+    form button{
+        right: 10%;
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+    }
+}
