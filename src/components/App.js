@@ -32,7 +32,7 @@ class App extends React.Component {
   handleCitySubmit = (e) => {
     e.preventDefault();
     // console.log("Potwierdzony formularz");
-    const API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid=4a4332af6685cdba1f0675e1f4a2e2bb&units=metric`;
+    const API = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid=4a4332af6685cdba1f0675e1f4a2e2bb&units=metric`;
     // const Pic = `http://openweathermap.org/img/wn/${this.state.picNr}@2x.png`;
     fetch(API)
       .then(response => {
