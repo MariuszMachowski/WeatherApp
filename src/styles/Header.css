@@ -10,6 +10,12 @@ header p{
     font-size: 22px;
     margin-left: 15vw;
 }
+header div{
+    /* height: 36px; */
+    height: 8vh;
+    width: 11.3vh;
+    /* background-color: black; */
+}
 header div img{
     display: block;
     width: 100%;
