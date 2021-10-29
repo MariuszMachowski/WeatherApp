@@ -5,7 +5,7 @@ const Form = (props) => {
     return (
         <form onSubmit={props.submit}>
             <input type="text" value={props.userCity} onChange={props.change} placeholder="Wpisz miasto..." />
-            <button className="confirm"><i className="fas fa-meteor"></i></button>
+            <button className="confirm" ><i className="fas fa-meteor"></i></button>
         </form>
     );
 }

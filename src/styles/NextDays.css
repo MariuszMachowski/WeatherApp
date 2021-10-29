@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section.nextDays{
+    height: 40vh;
+    width: 90%;
+    margin: 10px auto;
+    /* background-color: tomato; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+div.dayForecast{
+ display: flex;
+ flex-direction: column;
+flex-basis: 31%;
+height: 47%;
+background-color: rgba(0,0, 0, .65);
+border-radius: 10px;
+border: 2px solid gray;
+align-items: center;
+justify-content: space-around;
+transition: .3s;
+}
+div.dayForecast div.daysPic{
+    position: relative;
+    height: 50%;
+}
+div.dayForecast div.daysPic img{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 75px;
+   height: 75px;
+}
+div.dayForecast p.dayName{
+    color: deepskyblue;
+    margin: 10% 8% 0;
+    font-size: 15px;
+}
+div.dayForecast p.dnTemp{
+    color: white;
+    margin-bottom: 8%;
+}
+
+    @media (orientation: portrait) and (min-width:600px){
+        div.dayForecast div.daysPic img{
+           width: 100px;
+           height: 100px;
+        }
+        div.dayForecast p.dayName{
+        font-size: 22px;
+        }
+        div.dayForecast p.dnTemp{
+            font-size: 24px;
+            }
+        
+    }
+    @media (orientation: portrait) and (min-width:1024px){
+        div.dayForecast div.daysPic img{
+            width: 130px;
+            height: 130px;
+         }
+         div.dayForecast p.dayName{
+         font-size: 32px;
+         }
+         div.dayForecast p.dnTemp{
+             font-size: 36px;
+             }
+    }
+    @media (orientation: landscape){
+        section.nextDays{
+            width: 96%;
+        }
+        div.dayForecast{
+           flex-basis: 15%;
+           height: 90%;
+           }
+      
+           div.dayForecast div.daysPic img{
+              width: 65px;
+              height: 65px;
+           }
+           div.dayForecast p.dayName{
+               font-size: 13px;
+           }
+           div.dayForecast p.dnTemp{
+             font-size: 15px;
+           }
+    }
+    @media(orientation:landscape) and (min-width:960px){
+        div.dayForecast{
+            flex-basis: 15%;
+            height: 80%;
+            }
+       
+            div.dayForecast div.daysPic img{
+               width: 95px;
+               height: 95px;
+            }
+            div.dayForecast p.dayName{
+                font-size: 18px;
+            }
+            div.dayForecast p.dnTemp{
+              font-size: 20px;
+            }
+    }
+
+    @media(orientation:landscape) and (min-width:1024px){
+        div.dayForecast:hover{
+            background-color: rgba(0,0, 0, .85);
+            cursor: pointer;
+            }
+    }

@@ -5,11 +5,12 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
     position: relative;
-    height: 100vh;
+    height: 145vh;
     background-image: url('../images/mountains.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:right;
+    background-attachment: fixed;
     /* overflow-x: hidden; */
 }
 
@@ -19,13 +20,18 @@ div.App{
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.1)
+    background-color: rgba(0,0,0,0.1);
+    /* height: 110vh; */
 }
 
 div.wrapper{
-    overflow:hidden;
+    /* overflow:hidden; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
-    height: 100vh;
+    /* height: 110vh; */
 }
