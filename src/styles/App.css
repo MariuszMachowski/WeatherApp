@@ -8,9 +8,10 @@ body{
     height: 145vh;
     background-image: url('../images/mountains.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 110%;
     background-position-x: left;
     background-position-y: bottom;
+    /* background-position: 0% bottom; */
     background-attachment: fixed;
 }
 
