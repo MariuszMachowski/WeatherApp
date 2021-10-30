@@ -123,7 +123,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div className="Background">  </div>
         <div className="wrapper">
           <Header />
           <Form

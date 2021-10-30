@@ -5,14 +5,14 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
     position: relative;
-    height: 145vh;
+    /* height: 145vh; */
+    min-height: 100vh;
     background-image: url('../images/mountains.jpg');
+    background-attachment:fixed;
     background-repeat: no-repeat;
-    background-size: auto 110%;
+    background-size: cover;
     background-position-x: left;
     background-position-y: bottom;
-    /* background-position: 0% bottom; */
-    background-attachment: fixed;
 }
 
 div.App{
@@ -21,7 +21,7 @@ div.App{
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.1);
+    /* background-color: rgba(255,0,0,0.43); */
 }
 
 div.wrapper{
