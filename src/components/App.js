@@ -53,12 +53,15 @@ class App extends React.Component {
       value: e.target.value
     })
   }
+  handleHeight = () => {
+    if (!this.state.err && this.state.city) {
+      const divWrap = document.querySelector('.wrapper');
+      divWrap.classList.add('resultHeight');
+    }
+  }
   handleCitySubmit = (e) => {
     e.preventDefault();
-    // console.log("Potwierdzony formularz");
-    // const API = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid=4a4332af6685cdba1f0675e1f4a2e2bb&units=metric`;
     const API = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${this.state.value}&cnt=7&appid=927d09bc49dbee6aac7f5cb1df707542&units=metric`;
-    // const Pic = `http://openweathermap.org/img/wn/${this.state.picNr}@2x.png`;
     fetch(API)
       .then(response => {
         if (response.ok) {
@@ -68,13 +71,11 @@ class App extends React.Component {
       })
       .then(response => response.json())
       .then(data => {
-        // console.log(data);
         let time = new Date();
         time = time.toISOString().slice(0, 10);
         this.setState({
           err: false,
           date: time,
-          // picNr: data.weather[0].icon,
           picNr: data.list[0].weather[0].icon,
           humidity: data.list[0].humidity,
           clouds: data.list[0].clouds,
@@ -109,7 +110,8 @@ class App extends React.Component {
           day6TempN: data.list[6].temp.min.toFixed(),
           day6PicNr: data.list[6].weather[0].icon,
           day6Date: data.list[6].dt,
-        });
+        })
+        this.handleHeight();
       })
       .catch(err => {
         console.log(err);
