@@ -17,7 +17,6 @@ p.invalidCity{
 section.forecast{
     position: relative;
     height: 74vh;
-    /* background-color: indianred; */
 }
 
 header.mainInfo{
@@ -29,7 +28,6 @@ header.mainInfo{
     width: 100%;
     height: 120px;
     margin: 10px 0 0 0 ;
-    /* background-color: mediumturquoise; */
 }
 
 
@@ -41,20 +39,17 @@ header.mainInfo{
     align-self: flex-end;
     font-weight: normal;
     font-size: 36px;
-    /* background-color: limegreen; */
 }
 .mainInfo h1 .temp{
     font-size: 44px;
     margin-left: 5px;
-    /* font-weight: bold; */
 }
 .mainInfo p{
-    /* background-color: lightseagreen; */
     flex-grow: 1;
     margin: 0;
     padding-left: 25px;
     box-sizing: border-box;
-    font-style: italic;
+    font-weight: 300;
     font-size: 20px;
 }
 .mainInfo div.picture{
@@ -92,6 +87,7 @@ aside div{
     background-color: rgba(0,0,0,.6);
     transition: .2s;
     border-radius: 10px;
+    border: 1px solid rgb(131, 125, 125);
 }
 aside div p {
     text-align: center;
@@ -146,9 +142,7 @@ aside div p:nth-of-type(2){
         font-size: 28px;
     }
     section.forecast{
-        /* position: relative; */
         height: 74vh;
-        /* background-color: indianred; */
     }
 }
 @media (orientation: portrait) and (min-width:600px){
@@ -291,7 +285,6 @@ aside div p:nth-of-type(1){
         bottom: 5vw;
         left: 5%;
         width: 90%;
-        /* justify-content: space-around; */
         align-content: space-around;
     }
     aside div{

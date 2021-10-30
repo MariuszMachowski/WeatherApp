@@ -2,8 +2,6 @@ form{
     margin-top: 4vh;
     height: 10vh;
     position: relative;
-    /* background-color: tomato; */
-    /* z-index: 2; */
 }
 form input,form button{
     position: absolute;

@@ -9,9 +9,9 @@ body{
     background-image: url('../images/mountains.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:right;
+    background-position-x: left;
+    background-position-y: bottom;
     background-attachment: fixed;
-    /* overflow-x: hidden; */
 }
 
 div.App{
@@ -21,11 +21,9 @@ div.App{
     left: 0;
     width: 100%;
     background-color: rgba(0,0,0,0.1);
-    /* height: 110vh; */
 }
 
 div.wrapper{
-    /* overflow:hidden; */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -33,5 +31,4 @@ div.wrapper{
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
-    /* height: 110vh; */
 }
